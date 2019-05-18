@@ -158,7 +158,7 @@ public class CommandManager {
         }
     }
 
-    private class InvalidMethodsRuntimeException extends RuntimeException {
+    public class InvalidMethodsRuntimeException extends RuntimeException {
         public InvalidMethodsRuntimeException(String message) {
             super(message);
         }
