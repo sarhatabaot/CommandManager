@@ -3,7 +3,6 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * Command annotation to label command.
- * </p>
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Command {
