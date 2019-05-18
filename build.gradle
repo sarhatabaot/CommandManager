@@ -1,7 +1,5 @@
-plugins {
-    id 'java'
-    id 'maven'
-}
+apply plugin: 'java'
+apply plugin: 'maven'
 
 group 'com.github.sarhatabaot'
 version '1.0'
