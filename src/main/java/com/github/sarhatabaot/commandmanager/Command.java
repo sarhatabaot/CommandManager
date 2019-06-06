@@ -1,8 +1,10 @@
+package com.github.sarhatabaot.commandmanager;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
- * Command annotation to label command.
+ * com.github.sarhatabaot.commandmanager.Command annotation to label command.
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Command {

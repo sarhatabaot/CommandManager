@@ -1,3 +1,5 @@
+package com.github.sarhatabaot.commandmanager;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
