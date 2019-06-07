@@ -112,6 +112,19 @@ public class CommandManager {
         return hasPermission;
     }
 
+    public List<String> getTabCompletionByPermission(CommandSender sender){
+        List<String> tabCommands = new LinkedList<>();
+        for(Map.Entry<String,Method> entry: commands.entrySet()){
+            if(!tabCommands.contains(entry.getKey())){
+                Command command = entry.getValue().getAnnotation(Command.class);
+                if(checkPermission(command,sender)){
+                    tabCommands.add(command.aliases()[0]);
+                }
+            }
+        }
+        return tabCommands;
+    }
+
     public void callCommand(String cmdName, CommandSender sender, String[] args) {
         Method method = commands.get(cmdName.toLowerCase());
 
