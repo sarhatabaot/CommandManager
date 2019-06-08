@@ -62,6 +62,10 @@ public class CommandManager {
         return ChatColor.WHITE;
     }
 
+    public String getBaseCommand() {
+        return baseCommand;
+    }
+
     /**
      * Register a command.
      * @param cls   Class of the command
